@@ -30,7 +30,6 @@ public with sharing class WarehouseCalloutService implements Queueable, Database
             skuToSfEquipment.put(sfEquipmentItem.Warehouse_SKU__c,sfEquipmentItem);
         }
 
-        // Ceate or update data
         Product2[] equipmentToUpsert = new Product2[]{};
         for(Equipment wareHouseEquipmentItem:skuToWarehouseEquipment.values()){
             Product2 equipmentItem = new Product2();

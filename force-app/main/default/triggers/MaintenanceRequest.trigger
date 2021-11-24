@@ -9,7 +9,7 @@ trigger MaintenanceRequest on Case (after update) {
             }
         }
 
-        MaintenanceRequestHandler.createFollowUpRequests(followUpsToCreate);
+        MaintenanceRequestHelper.createFollowUpRequests(followUpsToCreate);
     }
 
 }

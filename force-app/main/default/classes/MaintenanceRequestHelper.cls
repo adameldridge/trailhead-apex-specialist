@@ -1,4 +1,4 @@
-public with sharing class MaintenanceRequestHandler {
+public with sharing class MaintenanceRequestHelper {
 
     public static void createFollowUpRequests(Case[] oldMaintRequests){
 
